@@ -719,7 +719,7 @@ rating input[type=radio]:checked ~ input[type=radio]:not(:checked)::after{
   /* section 3 : articles */
 
   .secGrid {
-    width: 32rem;
+    width: 100%;
   }
 
   .grid-articles {
