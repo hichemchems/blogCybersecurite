@@ -2,7 +2,7 @@
 
 ## Installation du projet en local et ouverture sur Visual Studio Code
 
-Lancer l'invite de commandes puis se placer dans le dossier que vous souhaitez :
+Lancer l'invite de commandes puis se placer dans le dossier que vous souhaitez
 ```bash
 cd le-chemin-vers-votre-dossier
 ```
