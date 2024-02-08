@@ -1,6 +1,6 @@
 # Projet CyberTech - Blog sur la cybersécurité
 
-## Installation du projet en local et ouverture sur Visual Studio Code
+## Télécharger le projet en local
 
 Lancer l'invite de commandes puis se placer dans le dossier que vous souhaitez
 ```bash
