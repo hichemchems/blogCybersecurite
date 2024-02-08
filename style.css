@@ -256,7 +256,7 @@ h6 {
 }
 
 .readMore, .exit-article a {
-  color: unset;
+  color: grey;
   text-decoration: none;
 }
 
