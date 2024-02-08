@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" id="top-page">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f0a5ea4c85.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Blog - Cybertech</title>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="index.html"><img src="assets/logo.png" class="logo_header"></a>
+          
+          <!--toggle boutton du menu burger-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            
+            <!--barre de recherche-->
+            <form class="d-flex" role="search">
+              <input id="searchbar" onkeyup="search_article()" class="form-control me-2" placeholder="Rechercher" aria-label="Rechercher">
+              <a href="#article-anchor" class="btn">Valider</a>
+            </form>
+            
+            <!--contact & reseaux sociaux-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-regular fa-envelope fa-xl" style="color: rgba(255, 255, 255, 0.714);"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa-brands fa-instagram fa-xl" style="color: rgba(255, 255, 255, 0.714);"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-square-facebook fa-xl" style="color: rgba(255, 255, 255, 0.714);"></i></a>
+              </li>
+            </ul>
+
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- SECTION 1 : Bannière du site web-->
+
+      <section class="banner-page">
+        <h1>BLOG</h1>
+        <h2 class="title-cyber">Cybersécurité</h2>
+        <p>Découvrez ici l’ensemble des articles, toutes catégories confondues, pour se renseigner sur la cybersécurité.</p>
+      </section>
+
+      <!-- SECTION 2 : Articles populaires -->
+      
+      <section class="most-popular-section">
+        <h2>Nos articles les plus lus !</h2>
+
+        <!--Carrousel-->
+        <div class="containerCarousel">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+
+              <!--article 1 carrousel-->
+              <div class="carousel-item active">
+                
+                <div class="img-carousel"></div>
+                
+                <div class="text-carousel">
+                  
+                  <h3>CyberNews Décembre 2023</h3>
+                  <p>Une violation de données a touché 36 millions de clients de Xfinity en décembre 2023,<br> 
+                    Comcast le plus grand opérateur de câble aux États-Unis, a annoncé qu’une violation de données avait affecté son activité Xfinity. La violation a touché environ 36 millions de clients,
+                  
+                    <div class="text-hide">
+                    <h5 style="font-size: 1rem;">Les données volées comprennent :</h5>
+                    <ul class="article1-list">
+                      <li>Noms</li>
+                      <li>Adresses</li>
+                      <li>Numéros de téléphone</li>
+                      <li>Adresses e-mail</li>
+                      <li>Dates de naissance</li>
+                      <li>Questions et réponses secrètes</li>
+                      <li>Quatre derniers chiffres des numéros de sécurité sociale</li>
+                    </ul>
+                    <p>La violation a été causée par une faille de sécurité dans le logiciel Citrix Application Delivery Controller (ADC). Cette faille, connue sous le nom de Citrix Bleed, permet à un attaquant non authentifié de télécharger des fichiers sur un serveur vulnérable.</p>
+                    <p>Citrix a publié un correctif pour la faille le 15 décembre 2023. Comcast a appliqué le correctif à ses serveurs Xfinity le 16 décembre 2023.</p>
+                    <p>Source : <a target="_blank" href="https://blog.httpcs.com/cybernews-decembre-2023/#:~:text=Le%2028%20d%C3%A9cembre%202023%2C%20Microsoft,et%20plus%20faciles%20%C3%A0%20installer.">https://blog.httpcs.com/cybernews-decembre-2023/#:~:text=Le%2028%20d%C3%A9cembre%202023%2C%20Microsoft,et%20plus%20faciles%20%C3%A0%20installer.</a></p>
+                  </div>
+                
+                </div>
+                
+                <div class="readMore-views" id="article-anchor">
+                  <p class="readMore-popular">Lire la suite .....</p>
+                  <p class="numberViews">Nombre de vu : 10</p>
+                </div>
+              
+              </div>
+              
+              <!--article 2 carrousel-->
+              <div class="carousel-item">
+                
+                <div class="img-carousel"></div>
+                
+                <div class="text-carousel">
+                  <h3>Une faille de sécurité critique dans Android peut être exploitée par tout utilisateur</h3>
+                  <p >En décembre 2023, Google a publié un bulletin de sécurité qui a révélé une faille de sécurité critique dans Android. Cette faille, identifiée sous la référence CVE-2023-40088, est une faille « zéro-clic » qui permet à un attaquant</p>
+                  
+                  <div class="text-hide">
+                    <p>distant d’exécuter du code sur un appareil Android sans aucune interaction de la part de l’utilisateur.
+                      Cette faille affecte toutes les versions d’Android à partir d’Android 11, y compris Android 12, Android 12L, Android 13 et Android 14.
+                    </p>
+                    <p> Google a publié des correctifs pour cette faille pour toutes ces versions.
+                      Les attaquants pourraient exploiter cette faille pour installer des logiciels malveillants, voler des données personnelles ou prendre le contrôle d’un appareil Android. Ils pourraient également utiliser cette faille pour lancer des attaques DDoS ou diffuser des logiciels malveillants.
+                      Google recommande aux utilisateurs d’Android de mettre à jour leurs appareils dès que possible pour corriger cette faille.
+                    </p>
+                    <p>Source : <a target="_blank" href="https://blog.httpcs.com/cybernews-decembre-2023/#:~:text=Le%2028%20d%C3%A9cembre%202023%2C%20Microsoft,et%20plus%20faciles%20%C3%A0%20installer.">https://blog.httpcs.com/cybernews-decembre-2023/#:~:text=Le%2028%20d%C3%A9cembre%202023%2C%20Microsoft,et%20plus%20faciles%20%C3%A0%20installer.</a></p>
+                  </div>
+                
+                </div>
+                
+                <div class="readMore-views">
+                  <p class="readMore-popular">Lire la suite .....</p>
+                  <p class="numberViews">Nombre de vu : 10</p>
+                </div>
+              
+              </div>
+
+              <!--article 3 carrousel-->
+              <div class="carousel-item">
+                
+                <div class="img-carousel"></div>
+                
+                <div class="text-carousel">
+                  <h3>ChatGPT et les données personnelles</h3>
+                  <h6>Une faille de sécurité dans ChatGPT dévoile des données personnelles</h6>
+                  <p>Deux chercheurs, John Smith et Jane Doe ont découvert une faille en essayant de comprendre comment ChatGPT générait du texte.</p>
+                  
+                  <div class="text-hide">
+                    <p> Ils ont remarqué qu’il était possible d’induire ChatGPT à générer
+                      du texte qui contenait des informations personnelles, telles que 
+                    </p>
+                    <p> des adresses e-mail, des numéros de téléphone ou des dates de naissance.</p>
+                    <p>Pour exploiter cette faille, les chercheurs ont utilisé une injection SQL pour inciter ChatGPT à générer du texte qui contenait des requêtes SQL malveillantes.</p>
+                    <p>Les requêtes SQL malveillantes ont ensuite été utilisées pour accéder aux données personnelles des utilisateurs stockées sur les serveurs d’OpenAI. Les chercheurs ont pu accéder aux adresses e-mail, aux numéros de téléphone et aux dates de naissance d’environ 100 000 utilisateurs.
+                      OpenAI a été informé de la faille de sécurité le 15 décembre 2023. La société a rapidement publié un correctif pour la faille. Le correctif a été appliqué à tous les utilisateurs de ChatGPT.
+                    </p>
+                    <h6>Une faille dans ChatGPT compromet la vie privée des utilisateurs sur Internet</h6>
+                    <p>Le 26 décembre 2023, des chercheurs de la société de sécurité Wiz ont découvert une faille de sécurité dans ChatGPT, un chatbot développé par OpenAI. Cette faille permet à un attaquant de récupérer les adresses électroniques des utilisateurs qui ont interagi avec ChatGPT.</p>
+                    <p>La faille est due à une vulnérabilité dans la fonction de recherche d’utilisateurs de ChatGPT. Cette fonction permet aux utilisateurs de rechercher d’autres utilisateurs en fonction de leur nom ou de leur adresse électronique. Cependant, la fonction ne vérifie pas correctement les adresses électroniques saisies par les utilisateurs. Cela signifie qu’un attaquant peut saisir une adresse électronique non valide et récupérer les adresses électroniques de tous les utilisateurs qui correspondent à cette adresse.</p>
+                    <p>Les chercheurs ont testé la faille et ont pu récupérer les adresses électroniques de plusieurs milliers d’utilisateurs. Ils ont également pu utiliser la faille pour identifier les utilisateurs qui avaient utilisé ChatGPT pour discuter de sujets sensibles, tels que des informations financières ou des informations personnelles.</p>
+                    <p>OpenAI a publié un correctif pour la faille le 26 décembre 2023. Cependant, les chercheurs estiment que la faille a pu être exploitée par des pirates avant la publication du correctif.</p>
+                    <p>Source : <a target="_blank" href="https://blog.httpcs.com/cybernews-decembre-2023/#:~:text=Le%2028%20d%C3%A9cembre%202023%2C%20Microsoft,et%20plus%20faciles%20%C3%A0%20installer.">https://blog.httpcs.com/cybernews-decembre-2023/#:~:text=Le%2028%20d%C3%A9cembre%202023%2C%20Microsoft,et%20plus%20faciles%20%C3%A0%20installer.</a></p>
+                  </div>
+                
+                </div>
+
+                <div class="readMore-views">
+                  <p class="readMore-popular">Lire la suite .....</p>
+                  <p class="numberViews">Nombre de vu : 10</p>
+                </div>
+
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3 : Articles -->
+
+      <h2>Nos articles</h2>
+
+      <section class="secGrid">
+
+        <div class="grid-articles">
+          
+          <!-- article 1 -->
+          <article class="card">
+            <h3 id="article1">Cyberattaques: l'IA, nouvelle menace pour les entreprises opérateur télécoms d'Ukraine, Kyivstar en a fait les frais</h3>
+            <p>Mi-décembre, le piratage du premier opérateur télécoms d'Ukraine, Kyivstar (ici, une boutique à Kiev), a privé 24 millions d'abonnés de téléphone et de connexion à internet mobile.</p>
+            <div class="viewsPart">
+              <p><a href="#" class="readMore">Lire la suite .....</a></p>
+              <p class="numberViews">Nombre de vu : 0</p>
+            </div>
+            <img src="assets/iaNouvelleMenace.jpg" alt="Card image cap">
+          </article>
+
+          <!-- article 2 -->
+          <article class="card">
+            <h3 id="article2">«Ne flashez pas tout et n'importe quoi» : les arnaques aux QR codes se répandent dans l’espace public</h3>
+            <p>DÉCRYPTAGE - Des QR codes frauduleux, placés dans les boîtes aux lettres sur des faux avis de passage ou sur des bornes de recharge électrique, </p>
+            <div class="viewsPart">
+              <p><a href="#" class="readMore">Lire la suite .....</a></p>
+              <p class="numberViews">Nombre de vu : 0</p>
+            </div>
+            <img src="assets/qrcode.jpg" alt="Card image cap">
+          </article>
+
+          <!-- article 3 -->
+          <article class="card">
+            <h3 id="article3">Comment la messagerie sécurisée française Olvid a réussi à séduire le gouvernement et les directions d’entreprises</h3>
+            <p>À partir du 8 décembre, les membres du gouvernement et l’ensemble des cabinets ministériels devront utiliser cette messagerie instantanée pour renforcer la sécurité des </p>
+            <div class="viewsPart">
+              <p><a href="#" class="readMore">Lire la suite .....</a></p>
+              <p class="numberViews">Nombre de vu : 0</p>
+            </div>
+            <img src="assets/olvid.jpg" alt="Card image cap">
+          </article>
+
+          <!-- article 4 -->
+          <article class="card">
+            <h3 id="article4">La Commission européenne renforce la cybersécurité des objets connectés</h3>
+            <p>Le Cyberresilience Act imposera des normes aux fabricants et une meilleure assistance au consommateur.
+              Bruxelles: montres ou garages connectés, frigos ou thermostats intelligents, moniteurs vidéo pour bébés…
+            </p>
+            <div class="viewsPart">
+              <p><a href="#" class="readMore">Lire la suite .....</a></p>
+              <p class="numberViews">Nombre de vu : 0</p>
+            </div>
+            <img src="assets/commission.jpg" alt="Card image cap">
+          </article>
+
+          <!-- article 5 -->
+          <article class="card">
+            <h3 id="article5">«Les hackers sont plus nombreux que jamais» : comment les entreprises recrutent leur GIGN de la cybersécurité</h3>
+            <p>DÉCRYPTAGE - À la veille des Jeux Olympiques de Paris 2024, le risque de cyberattaque n’a jamais été aussi élevé, que ce soit pour les professionnels ou les particuliers,</p>
+            <div class="viewsPart">
+              <p><a href="#" class="readMore">Lire la suite .....</a></p>
+              <p class="numberViews">Nombre de vu : 0</p>
+            </div>
+            <img src="assets/gign.jpg" alt="Card image cap">
+          </article>
+
+          <!-- article 6 -->
+          <article class="card">
+            <h3 id="article6">Russie : 14 ans de prison pour le fondateur d'une importante société de cybersécurité</h3>
+            <p>Le tribunal municipal de Moscou a condamné mercredi 26 juillet Ilia Sachkov, le fondateur du fleuron russe de la cybersécurité, pour trahison,</p>
+            <div class="viewsPart">
+              <p><a href="#" class="readMore">Lire la suite .....</a></p>
+              <p class="numberViews">Nombre de vu : 0</p>
+            </div>
+            <img src="assets/iliaSachkov.jpeg" alt="Card image cap">
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Modales : affiche le contenu complet des articles -->
+
+      <!-- modale 1 -->
+      <article class="modal">
+        <div class="dark-background"></div>
+        <div class="exit-article"><a href="#article1">X</a></div>
+
+        <div class="full-article">
+          <div class="banner-full-article img-article1"></div>
+          
+          <h3>Cyberattaques: l'IA, nouvelle menace pour les entreprises</h3>
+          <h4>Avec les nouvelles technologies, la menace s'accroît tant sur l’étendue du périmètre à protéger que sur l’intensité des attaques.</h4>
+          <p>Une clé USB transportée par coursier pour transmettre des ordres entre des salles de marché de New York. C'est la seule parade trouvée par la filiale américaine du géant bancaire chinois ICBC en novembre dernier pour régler en urgence des transactions sur la dette américaine. L'attaque de son système d'information a déstabilisé pendant quelques jours l'énorme marché des obligations d'État américaines. Mi-décembre, le piratage du premier opérateur télécoms d'Ukraine, Kyivstar, privait 24 millions d'abonnés de coups de téléphone et de connexion à l’Internet mobile, créant de longues files d'attente devant les boutiques d'opérateurs concurrents...
+            Qu'elles soient motivées par l'argent ou par des intérêts géopolitiques, les cyberattaques ont largement démontré leurs capacités à déstabiliser des entreprises et leurs réseaux de fournisseurs, de clients ou de partenaires. Le risque cyber n'est malheureusement pas nouveau, mais il s'accélère et s'amplifie sous le coup de la digitalisation croissante…
+          </p>
+          
+          <p>Source : <a target="_blank" href="https://www.lefigaro.fr/secteur/high-tech/cyberattaques-comment-l-ia-aiguise-les-risques-pour-les-entreprises-20240121">https://www.lefigaro.fr/secteur/high-tech/cyberattaques-comment-l-ia-aiguise-les-risques-pour-les-entreprises-20240121 </a></p>
+          
+          <!-- Formulaire -->
+          <div class="contact-wrapper" id="form">
+            <h3>Vous avez aimé cet article ? <br> Faites-nous un retour !</h3>
+            <button><a class="showForm">Cliquez-ici</a></button>
+            <form class="form-horizontal">
+              <label class="title-label" for="name">Nom* :</label>
+              <input type="text" id="name" placeholder="Nom" name="name" required>
+              <label class="title-label" for="email">Email* :</label>
+              <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+              <label class="title-label" for="message">Message* :</label>
+              <textarea rows="10" id="message" placeholder="Ecrivez votre message ici" name="message" required></textarea>
+              <button class="button" id="submit" type="submit">Envoyer</button>
+            </form>
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- modale 2 -->
+      <article class="modal">
+        <div class="dark-background"></div>
+        <div class="exit-article"><a href="#article2">X</a></div>
+
+        <div class="full-article">
+          <div class="banner-full-article img-article2"></div>
+          
+          <h3>«Ne flashez pas tout et n'importe quoi» : les arnaques aux QR codes se répandent dans l’espace public </h3>
+          <h4>DÉCRYPTAGE - Des QR codes frauduleux, placés dans les boîtes aux lettres sur des faux avis de passage ou sur des bornes de recharge électrique, renvoient vers des sites malveillants pour subtiliser données personnelles ou coordonnées bancaires.</h4>
+          <p>Dans les restaurants, les hôtels, les administrations, ou pour louer un vélo… les QR codes, ces petits carrés à pixels noirs et blancs font désormais partie du quotidien. Flashés à l’aide de l’appareil photo, ils permettent d’accéder directement à
+          un site web. Par leur facilité d’usage, ils ont gagné une place à part dans le paysage administratif, commercial ou même éducatif. Mais ils sont également devenus un outil inépuisable pour les escrocs à la pêche aux coordonnées bancaires ou aux données personnelles. C'est ce que l’on appelle le «quishing».
+          </p>
+          <p>Sur les contraventions ou les avis de passage de La Poste, les QR codes peuvent être falsifiés afin de rediriger vers un site malveillant, mais pas seulement. Dernier épisode en date : dans le département du Loiret, à la mi-décembre, des usagers de voitures électriques se sont fait voler leurs informations 
+          de paiement en scannant un QR code collé sur une borne de recharge. L'autocollant renvoyait en fait vers une copie du site du prestataire. Mauvaise surprise : les délinquants ont récupéré les données, prélevé de l'argent… et les voitures n’ont jamais été chargées.
+          </p>
+          
+          <p>Source : <a target="_blank" href="https://www.lefigaro.fr/secteur/high-tech/ne-pas-flashez-pas-tout-et-n-importe-quoi-les-arnaques-aux-qr-codes-se-repandent-dans-l-espace-public-20240120">https://www.lefigaro.fr/secteur/high-tech/ne-pas-flashez-pas-tout-et-n-importe-quoi-les-arnaques-aux-qr-codes-se-repandent-dans-l-espace-public-20240120</a></p>
+          
+          <!-- Formulaire -->
+          <div class="contact-wrapper" id="form">
+            <h3>Vous avez aimé cet article ? </br> Faites-nous un retour !</h3>
+            <button><a class="showForm">Cliquez-ici</a></button>
+            <form class="form-horizontal">
+              <label class="title-label" for="name">Nom* :</label>
+              <input type="text" id="name" placeholder="Nom" name="name" required>
+              <label class="title-label" for="email">Email* :</label>
+              <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+              <label class="title-label" for="message">Message* :</label>
+              <textarea rows="10" id="message" placeholder="Ecrivez votre message ici" name="message" required></textarea>
+              <button class="button" id="submit" type="submit">Envoyer</button>
+            </form>
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- modale 3 -->
+      <article class="modal">
+        <div class="dark-background"></div>
+        <div class="exit-article"><a href="#article3">X</a></div>
+        
+        <div class="full-article">
+          <div class="banner-full-article img-article3"></div>
+
+          <h3>Comment la messagerie sécurisée française Olvid a réussi à séduire le gouvernement et les directions d’entreprises</h3>
+          <h4>À partir du 8 décembre, les membres du gouvernement et l’ensemble des cabinets ministériels devront utiliser cette messagerie instantanée pour renforcer la sécurité des conversations et des informations partagées.</h4>
+          <p> Une fin d’année sur le pied de guerre pour les quinze employés d’Olvid. À partir du 8 décembre au plus tard, la messagerie instantanée sécurisée de cette jeune société française sera l’application que les membres du gouvernement
+            et l’ensemble des cabinets ministériels devront obligatoirement utiliser pour communiquer. Par une circulaire du 22 novembre, la première ministre, Élisabeth Borne, leur a demandé d’installer l’application française Olvid sur leurs téléphones
+            et leurs ordinateurs à la place de tout autre messagerie instantanée utilisée jusque-là, le plus souvent WhatsApp ou Signal. Objectif : « Renforcer la sécurité des conversations et des informations partagées. »
+            Depuis 2019, cette jeune société a développé une messagerie instantanée privée et sécurisée qui résout un risque auquel sont exposés les grands services de messageries mieux connus du grand public. En dépit du chiffrement des données de bout en bout, WhatsApp ou Signal s’appuient pour fonctionner sur un annuaire…
+          </p>
+          
+          <p>Source : <a target="_blank" href="https://www.lefigaro.fr/secteur/high-tech/olvid-la-messagerie-instantanee-francaise-qui-detrone-la-securite-de-whatsapp-20231206">https://www.lefigaro.fr/secteur/high-tech/olvid-la-messagerie-instantanee-francaise-qui-detrone-la-securite-de-whatsapp-20231206</a></p>
+          
+          <!-- Formulaire -->
+          <div class="contact-wrapper" id="form">
+            <h3>Vous avez aimé cet article ? <br> Faites-nous un retour !</h3>
+            <button><a class="showForm">Cliquez-ici</a></button>
+            <form class="form-horizontal">
+              <label class="title-label" for="name">Nom* :</label>
+              <input type="text" id="name" placeholder="Nom" name="name" required>
+              <label class="title-label" for="email">Email* :</label>
+              <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+              <label class="title-label" for="message">Message* :</label>
+              <textarea rows="10" id="message" placeholder="Ecrivez votre message ici" name="message" required></textarea>
+              <button class="button" id="submit" type="submit">Envoyer</button>
+            </form>
+          </div>
+        
+        </div>
+
+      </article>
+
+      <!-- modale 4 -->
+      <article class="modal">
+        <div class="dark-background"></div>
+        <div class="exit-article"><a href="#article4">X</a></div>
+        
+        <div class="full-article">
+          <div class="banner-full-article img-article4"></div>
+          
+          <h3>La Commission européenne renforce la cybersécurité des objets connectés</h3>
+          <p>Bruxelles montres ou garages connectés, frigos ou thermostats intelligents, moniteurs vidéo pour bébés… Si tous ces objets du quotidien facilitent la vie, ils peuvent aussi devenir le cauchemar de leurs propriétaires, notamment quand ils permettent aux pirates informatiques de tout savoir sur leur mode de vie ou leurs absences.
+            Alors que les objets intelligents se multiplient, les cyberattaques augmentent aussi (une attaque par rançongiciel toutes les 11 secondes au niveau mondial et des pertes d’environ 20 milliards d’euros chaque année). La Commisson européenne s’y est attaquée en 2022 en proposant un règlement sur la cybersécurité des objets connectés.
+            Ce Cyberresilience Act vient d’être approuvé par les négociateurs du Parlement européen et des États membres dans la nuit de jeudi à vendredi.
+          </p>
+          
+          <p>Source : <a target="_blank" href="https://www.lefigaro.fr/secteur/high-tech/la-commission-europeenne-renforce-la-cybersecurite-des-objets-connectes-20231201">https://www.lefigaro.fr/secteur/high-tech/la-commission-europeenne-renforce-la-cybersecurite-des-objets-connectes-20231201</a></p>
+          
+          <!-- Formulaire -->
+          <div class="contact-wrapper" id="form">
+            <h3>Vous avez aimé cet article ? <br> Faites-nous un retour !</h3>
+            <button><a class="showForm">Cliquez-ici</a></button>
+            <form class="form-horizontal">
+              <label class="title-label" for="name">Nom* :</label>
+              <input type="text" id="name" placeholder="Nom" name="name" required>
+              <label class="title-label" for="email">Email* :</label>
+              <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+              <label class="title-label" for="message">Message* :</label>
+              <textarea rows="10" id="message" placeholder="Ecrivez votre message ici" name="message" required></textarea>
+              <button class="button" id="submit" type="submit">Envoyer</button>
+            </form>
+          </div>
+        
+        </div>
+
+      </article>
+      
+      <!-- modale 5 -->
+      <article class="modal">
+        <div class="dark-background"></div>
+        <div class="exit-article"><a href="#article5">X</a></div>
+        
+        <div class="full-article">
+          <div class="banner-full-article img-article5"></div>
+          
+          <h3>«Les hackers sont plus nombreux que jamais» : comment les entreprises recrutent leur GIGN de la cybersécurité</h3>
+          <h4>DÉCRYPTAGE - À la veille des Jeux Olympiques de Paris 2024, le risque de cyberattaque n’a jamais été aussi élevé, que ce soit pour les professionnels ou les particuliers. Les entreprises redoublent d’efforts pour faire face. Coulisses.</h4>
+          <p>Il eut été aisé, afin d’illustrer un article consacré au recrutement et à la cybersécurité, de choisir une image tapageuse et clichée d’un individu dans une pièce sombre vêtu d’un hoodie avec une épaisse capuche dissimulant son visage. C’est ainsi que le grand public imagine le hacker.
+            Cette représentation n’a rien à voir avec la réalité. Le hacker n’a plus rien d’un marginal ou d’un loup solitaire, en planque devant son écran. Il est au contraire très organisé, ressemble à Monsieur Tout-le-Monde, travaille en équipe et est devenu un talent «normal» du monde du recrutement. 
+            Dans les entreprises, on le traque avec assiduité. On tente de deviner ses ambitions, ses stratagèmes, ses techniques. Et pour cela, il s’agit de recruter une armée de talents qui parlent le langage des hackers… y compris des hackers eux-mêmes.
+            Pour comprendre l’ennemi, il faut donc le laisser entrer dans la bergerie ? Oui, en partie… Et il y a urgence : 25.000 ingénieurs cyber manquent à l’appel en France…
+          </p>
+          
+          <p>Source : <a target="_blank" href="https://www.lefigaro.fr/decideurs/management/les-hackers-sont-partout-comment-les-entreprises-recrutent-leur-gign-de-la-cybersecurite-20231022">https://www.lefigaro.fr/decideurs/management/les-hackers-sont-partout-comment-les-entreprises-recrutent-leur-gign-de-la-cybersecurite-20231022</a></p>
+          
+          <!-- Formulaire -->
+          <div class="contact-wrapper" id="form">
+            <h3>Vous avez aimé cet article ? </br> Faites-nous un retour !</h3>
+            <button><a class="showForm">Cliquez-ici</a></button>
+            <form class="form-horizontal">
+              <label class="title-label" for="name">Nom* :</label>
+              <input type="text" id="name" placeholder="Nom" name="name" required>
+              <label class="title-label" for="email">Email* :</label>
+              <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+              <label class="title-label" for="message">Message* :</label>
+              <textarea rows="10" id="message" placeholder="Ecrivez votre message ici" name="message" required></textarea>
+              <button class="button" id="submit" type="submit">Envoyer</button>
+            </form>
+          </div>
+
+        </div>
+
+      </article>
+      
+      <!-- modale 6 -->
+      <article class="modal">
+        <div class="dark-background"></div>
+        <div class="exit-article"><a href="#article6">X</a></div>
+        
+        <div class="full-article">
+          <div class="banner-full-article img-article6"></div>
+          
+          <h3>Russie : 14 ans de prison pour le fondateur d'une importante société de cybersécurité</h3>
+          <h4>Astuce 1 - Se renseigner aux bons endroits</h4>
+          <p>Le tribunal municipal de Moscou a condamné mercredi 26 juillet Ilia Sachkov, le fondateur du fleuron russe de la cybersécurité Group-IB, à 14 ans de prison pour «haute trahison», selon une journaliste de l'AFP présente à l'audience.</p>
+          <p>«Le tribunal a déclaré M. Satchkov coupable en vertu de l'article 275 du Code pénal russe (trahison) et l'a condamné à 14 ans de prison avec une peine à purger dans une colonie pénitentiaire à régime sévère», a déclaré le juge Alexandre Rybak à l'issue de la délibération.</p>
+          
+          <p>Source : <a target="_blank" href="https://www.lefigaro.fr/flash-actu/russie-14-ans-de-prison-pour-le-fondateur-d-une-importante-societe-de-cybersecurite-20230726">https://www.lefigaro.fr/flash-actu/russie-14-ans-de-prison-pour-le-fondateur-d-une-importante-societe-de-cybersecurite-20230726</a></p>
+          
+          <!-- Formulaire -->
+          <div class="contact-wrapper" id="form">
+            <h3>Vous avez aimé cet article ? <br> Faites-nous un retour !</h3>
+            <button><a class="showForm">Cliquez-ici</a></button>
+            <form class="form-horizontal">
+              <label class="title-label" for="name">Nom* :</label>
+              <input type="text" id="name" placeholder="Nom" name="name" required>
+              <label class="title-label" for="email">Email* :</label>
+              <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+              <label class="title-label" for="message">Message* :</label>
+              <textarea rows="10" id="message" placeholder="Ecrivez votre message ici" name="message" required></textarea>
+              <button class="button" id="submit" type="submit">Envoyer</button>
+            </form>
+          </div>
+
+        </div>
+
+      </article>
+      <!-- fin modales lus -->
+    
+    </main>
+    
+    <footer>
+      
+      <div class="footer_rate">
+        <h6>NOTEZ CET ARTICLE</h6>
+        <p class="grid_footer_rate_1">Vous avez aimé cet article ?</p>
+        <p class="grid_footer_rate_2">Rendez-le plus utile auprès des internautes en lui mettant une bonne note.</p>
+        <div class="card-rating">
+          <rating class="star-rate">
+            <input type="radio" name="rating" value="1" aria-label="1 star" required/>
+            <input type="radio" name="rating" value="2" aria-label="2 stars"/>
+            <input type="radio" name="rating" value="3" aria-label="3 stars"/>
+            <input type="radio" name="rating" value="4" aria-label="4 stars"/>
+            <input type="radio" name="rating" value="5" aria-label="5 stars"/>
+          </rating>
+        </div>
+      </div>
+      
+      <section class="footerContainer">
+        
+        <div class="footer_absolute">
+          
+          <div class="footer_info">
+            <p> 14 Rue de la Beaune</p>
+            <p>Bât C - 4ème étage</p>
+            <p>93100 Montreuil</p>
+            <div class="footerContact">
+              <a href="mailto:cf93@assofac.org"><i class="fa-solid fa-envelope"></i>--cf93@assofac.org</a>
+              <a href="tel:+33176362178"><i class="fa-solid fa-phone"></i>+33 (0)1 76 36 21 78</a>
+            </div>
+          </div>
+
+          <div>
+            <img class="footer_absolute_logo" src="assets/logo.png" alt="logo_footer">
+          </div>
+
+          <div class="footer_text">
+            <p>Cybertech est un acteur reconnu dans le conseil et l'intégration de solutions de cybersécurité, de cloud et d'infrastructure.</p>
+            <p>Comportant plus de 11 agences en France, 500 collaborateurs et 2 centres de services, nous nous engageons à accompagner nos clients dans leurs projets de transformation digitale.</p>
+          </div>
+
+        </div>
+
+        <img class="trait" src="assets/trait.png" alt="">
+        
+        <div class="footer_absolute2">
+          
+          <div class="footerCopyright">
+            <p>Copyright © 2024 CYBERTECH. Tous droits réservés.</p>
+          </div>
+
+          <div class="footerMotionsLegales" >
+            <a class="footerMotions" href="#">Mentions Légales</a>|  
+            <a class="footerMotions" href="#">Politique de cookies</a>|  
+            <a class="footerMotions" href="#">Politique de confidentialité</a>    
+          </div>
+
+        </div>
+
+      </section>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
