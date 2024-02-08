@@ -4,7 +4,7 @@
 
 Lancer l'invite de commandes puis se placer dans le dossier que vous souhaitez :
 ```bash
-cd "le-chemin-vers-votre-dossier"
+cd le-chemin-vers-votre-dossier
 ```
 Cloner le projet dans votre dossier
   ```bash
